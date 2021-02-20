@@ -11,3 +11,7 @@ Topics:
 * Rest parameter.
 * String methods (startsWith, endsWith, includes, repeat).
 * Destructuring.
+* Object literals.
+* Set.
+* Map.
+* Symbol.
