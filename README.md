@@ -12,6 +12,8 @@ Topics:
 * String methods (startsWith, endsWith, includes, repeat).
 * Destructuring.
 * Object literals.
-* Set.
-* Map.
+* Set and weakSet.
+* Map and weakMap.
 * Symbol.
+* forEach method.
+* Symbol iterator.
