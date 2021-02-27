@@ -27,3 +27,30 @@ console.log(theIterator.next()); // Object { value: undefined, done: true }
 for (let char of myName) {
   console.log(char);
 }
+
+// custom iterable object
+const info = {
+  name: 'test',
+  age: '23',
+  country: 'Jordan',
+  [Symbol.iterator]() {
+    let step = 0;
+    let properties = Object.keys(this);
+    return {
+      next() {
+        return {
+          value: properties[step],
+          done: step++ === properties.length
+        }
+      }
+    }
+  }
+};
+
+for (let prop of info) {
+  console.log(prop);
+}
+
+
+
+
